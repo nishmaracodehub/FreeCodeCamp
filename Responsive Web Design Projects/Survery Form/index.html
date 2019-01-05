@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="survey.css" type="text/css">
+</head>
+
+<body>
+
+    <h1 class="my-4" id="title">Survey Form</h1>
+    <div class="container bg-light">
+        <form action="#" id="survey-form">
+            <div class="row my-5"></div>
+            <div class="my-4">
+                <p id="description">Let us know how we can improve freeCodeCamp</p>
+            </div>
+            <div class="row mx-auto my-3">
+                <div class="col-sm-5 text-right">
+                    <label for="name" id="name-label"><sup>*&nbsp;</sup>Name:</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your Name" autofocus required>
+                </div>
+            </div>
+            <div class="row mx-auto my-3">
+                <div class="col-sm-5 text-right">
+                    <label for="email" id="email-label"><sup>*&nbsp;</sup>Email:</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" class="form-control"
+                        id="email" placeholder="Enter your Email" autofocus required>
+                </div>
+            </div>
+            <div class="row mx-auto my-3">
+                <div class="col-sm-5 text-right">
+                    <label for="number" id="number-label"><sup>*&nbsp;</sup>Age:</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control" id="number" placeholder="Age" min="5" max="120" autofocus
+                        required>
+                </div>
+            </div>
+            <div class="row mx-auto my-3 form-group">
+                <div class="col-sm-5 text-right">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                </div>
+                <div class="col-sm-4">
+                    <select class="form-control" id="dropdown">
+                        <option selected>Select an Option</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to Say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mx-auto my-3 form-group">
+                <div class="col-sm-5 text-right">
+                    <label for="userrating"><sup>*&nbsp;</sup>How likely is that you would recommend freeCodeCamp to a
+                        friend?</label>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <div class="d-block-inline">
+                        <input type="radio" id="definitely" value="1" name="radio-buttons">
+                        <label for="definitely">Definitely</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="radio" id="Maybe" value="2" name="radio-buttons">
+                        <label for="Maybe">Maybe</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="radio" id="Not sure" value="3" name="radio-buttons">
+                        <label for="Not sure">Not sure</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-auto my-3 form-group">
+                <div class="col-sm-5 text-right">
+                    <label for="userlike">What do you like most in FCC:</label>
+                </div>
+                <div class="col-sm-4">
+                    <select class="form-control" id="dropdown" multiple>
+                        <option selected>Select an Option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mx-auto my-3 form-group">
+                <div class="col-sm-5 text-right">
+                    <label for="improvements">Things that should be improved in the future
+                        (Check all that apply):</label>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Front-end Projects" value="1" name="improve">
+                        <label for="Front-end Projects">Front-end Projects</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Back-end Projects" value="2" name="improve">
+                        <label for="Back-end Projects">Back-end Projects</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Data Visualization" value="3" name="improve">
+                        <label for="Data Visualization">Data Visualization</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Challenges" value="4" name="improve">
+                        <label for="Challenges">Challenges</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Open Source Community" value="5" name="improve">
+                        <label for="Open Source Community">Open Source Community</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Gitter help rooms" value="6" name="improve">
+                        <label for="Gitter help rooms">Gitter help rooms</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Videos" value="7" name="improve">
+                        <label for="Videos">Videos</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="City Meetups" value="8" name="improve">
+                        <label for="City Meetups">City Meetups</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Wiki" value="9" name="improve">
+                        <label for="Wiki">Wiki</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Forum" value="10" name="improve">
+                        <label for="Forum">Forum</label>
+                    </div>
+                    <div class="d-block-inline">
+                        <input type="checkbox" id="Additional Courses" value="11" name="improve">
+                        <label for="Additional Courses">Additional Courses</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-auto my-3 form-group">
+                <div class="col-sm-5 text-right">
+                    <label for="textarea">Any Comments or Suggestions?</label>
+                </div>
+                <div class="col-sm-4 text-left">
+                    <textarea class="form-control" id="textarea" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row my-4 form-group">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-info" id="submit">Submit</button>
+                </div>
+            </div>
+            <div class="row my-5">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
