@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-bar">
+            <a class="navbar-brand" href="#">
+                <img src="https://tbncdn.freelogodesign.org/b36760f9-5921-4b98-9241-f9e3e3dfdd1a.png?1546781098191"
+                    width="70px" height="70px" id="header-img" class="d-inline-block " alt="Classic Violin logo">
+                Original Classic Violins
+            </a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#howitworks">How it Works</a></li>
+                    <a class="nav-link" href="#features">Features</a></li>
+                    <a class="nav-link" href="#pricing">Pricing</a></li>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container-fluid">
+        <section class="d-flex justify-content-center bg-dark my-5">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <div class="row mx-auto">
+                    <div class="col-xs-12">
+                        <h2 class="text-white">Handcrafter, home-made masterpieces </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <input type="email" id="email" class=" mx-auto form-control text-center my-4" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+                            placeholder="Enter your email address" required autofocus>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="mx-auto form-control bg-warning my-4" id="submit">GET STARTED</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="space"></div>
+        <section id="howitworks">
+            <div class="embed-responsive embed-responsive-16by9" id="video">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LGCIbn5ZT0g" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="features" class="bg-warning">
+            <div class="row my-4"></div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-10">
+                    <h2 class="text-center"><i class="text-top fa fa-2x fa-fire"></i> Premium Materials</h2>
+                    <p>Our Violins use the shiniest brass which is sourced locally. This will increase the longevity of
+                        your purchase.</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-sm-10">
+                    <h2 class="text-center"><i class="fa fa-2x fa-truck"></i> Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center my-4">
+                <div class="col-sm-10">
+                    <h2 class="text-center"><i class="fa fa-2x fa-battery-full"></i> Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+        <div class="space"></div>
+        <section id="pricing">
+            <div class="row d-flex justify-content-between mb-5">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3>Mendini Violin</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3>$200</h3>
+                            <p>Mendini is higly durable brand ideal for beginner and intermediate students.It is
+                                hand-made from solid spruce and has a well-finished maple back and side wood.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3>Knilling Violin</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3>$500</h3>
+                            <p>Knilling Violins are well known among violin teachers and students. In addition to it’s
+                                high-quality craftsmanship, the company’s student violins have unique pegs for optimal
+                                tuning.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h3>Yamaha Violin</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3>$935</h3>
+                            <p>The body is made from maple and has a spruce top. The violin comes in a complete outfit
+                                with
+                                a lightweight shock-proof carrying case and a brazilwood bow.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="space"></div>
+    <footer id="footer">
+        <div class="row my-3"></div>
+        <div class="row d-flex justify-content-center mb-2">
+
+            <div class="col-sm-3 text-right"><a href="#">Privacy</a></div>
+            <div class="col-sm-3"><a href="#">Terms</a></div>
+            <div class="col-sm-3 text-left"><a href="#">Contact</a></div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xs-10 text-dark">
+                <p>&copy; Copyright 2016, Original Violins</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

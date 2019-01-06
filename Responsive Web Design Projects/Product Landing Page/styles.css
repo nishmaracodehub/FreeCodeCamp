@@ -1,0 +1,58 @@
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+@media (max-width: 992px){
+    #pricing{
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 700px){
+    #pricing{
+        max-width: 700px;
+    }
+}
+
+#nav-bar{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: antiquewhite;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+#email{
+    max-width: 60%;
+}
+
+#submit{
+    max-width: 50%;
+}
+
+.space{
+    height: 100px;
+}
+
+.price{
+    background-color: antiquewhite;
+}
+
+#footer{
+    background-color: #ddd;
+    height: 100px;
+}
+
+#form{
+    margin-top: 10%;
+    height: 500px;
+}
+
